@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Agenda Telefonica</title>
+
+    <style>
+        body {
+            background-color: bisque;
+        }
+
+        .header {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+        }
+
+        input[type="text"] {
+            border: 5px;
+            box-sizing: border-box;
+            padding: 8px 24px;
+            margin: 20px;
+        }
+
+        input[type="submit"] {
+            background-color: rgb(16, 139, 0);
+            color: white;
+            width: 150px;
+            height: 35px;
+            border: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .backgroundForm {
+            text-align: center;
+            background-color: rgba(214, 195, 108, 0.842);
+            width: 700px;
+            height: 135px;
+            margin: auto;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        #result {
+            text-align: center;
+            background-color: rgba(177, 120, 14, 0.959);
+            margin: auto;
+            border-radius: 8px;
+            width: 700px;
+            margin-top: 20px;
+        }
+
+        table{
+            width: 100%;
+        }
+
+    
+     
+    </style>
+
+    <script>
+        var idxEditare = -1;
+        var list = [];
+
+        function adauga(form, event) {
+            event.preventDefault();
+            var obj = {};
+            obj.nume = form.querySelector("[name='nume']").value;
+            obj.telefon = form.querySelector("[name='telefon']").value;
+            if (idxEditare === -1) {
+                list.push(obj);
+            } else {
+                list[idxEditare] = obj;
+                idxEditare = -1;
+            }
+            draw();
+            showTable();
+        }
+
+        function showTable() {
+            document.querySelector("#result").classList.remove("hidden");
+        }
+
+        function draw() {
+            var str = "";
+            for (var i = 0; i < list.length; i++) {
+                str += `<tr>
+                    <td>${list[i].nume}</td>
+                    <td>${list[i].telefon}</td>
+                    <td>
+                        <input class="modify" type="button" value="Modifica" onclick="modifica(${i});" />
+                        <input class="delete" type="button" value="Sterge" onclick="sterge(${i});"/>
+                    </td>
+                    
+                </tr>`;
+            }
+
+            document.querySelector("#result tbody").innerHTML = str;
+        }
+
+        function sterge(aaa) {
+            list.splice(aaa, 1);
+            draw();
+        }
+
+        function modifica(idx) {
+            window.idxEditare = idx;
+            var obj = list[idx];
+            var form = document.querySelector("#add-form");
+            form.querySelector("[name='nume']").value = obj.nume;
+            form.querySelector("[name='telefon']").value = obj.telefon;
+            
+        }
+
+       
+    </script>
+</head>
+
+<body>
+    <h1 class="header">Agenda</h1>
+
+    <div class="backgroundForm">
+        <form id="add-form" onsubmit="adauga(this,event);">
+            <label>Nume:<input type="text" value="" name="nume" /></label>
+            <label>Telefon:<input type="text" value="" name="telefon" /></label>
+            <input type="submit" value="Adauga Contact" onclick="showTable" />
+        </form>
+    </div>
+
+    <div id="result" class="hidden">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nume</th>
+                    <th>Telefon</th>
+                </tr>
+            </thead>
+
+            <tbody></tbody>
+        </table>
+    </div>
+</body>
+
+</html>
