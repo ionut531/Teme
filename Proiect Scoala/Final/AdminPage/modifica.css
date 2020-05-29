@@ -1,0 +1,147 @@
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.topBar {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 60px;
+    border-radius: 5px;
+    background-color: rgb(0, 94, 184);
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    margin-left: 25px;
+}
+
+.navbarButtons {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+}
+
+.navTitle {
+    padding: 0px 10px;
+}
+
+.shopButton {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    border: none;
+    white-space: nowrap;
+    background-color: inherit;
+    cursor: pointer;
+    margin-right: 25px;
+}
+
+.infoTable {
+    padding: 20px;
+    background-color: rgb(228, 241, 249);
+}
+
+#modificaProdus {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
+
+.infoText {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    margin-right: 100px;
+}
+
+input {
+    width: 500px;
+    height: 20px;
+    float: right;
+    margin-right: 300px;
+    border-radius: 3px;
+}
+
+#cancelButton {
+    font-size: 15px;
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    background-color: red;
+    color: white;
+    float: right;
+    margin-right: 30px;
+    margin-left: 20px;
+
+}
+
+#saveButton {
+    font-size: 15px;
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    background-color: limegreen;
+    color: white;
+    float: right;
+
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid blue;
+    border-right: 16px solid green;
+    border-bottom: 16px solid red;
+    border-left: 16px solid pink;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    margin: 0 auto;
+
+
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.hidden {
+    display: none;
+    text-align: center;
+
+}
+
+.backgroundLoader {
+    position: fixed;
+    background-color: rgb(0, 94, 184);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+
+}

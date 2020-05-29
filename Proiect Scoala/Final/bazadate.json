@@ -1,0 +1,78 @@
+{"produse":[
+{
+"nume":"Alcatel 1S",
+"pret":299,
+"imagine":"A50.JPG",
+"stoc":3,
+"descriere":"Telefon mobil Alcatel 1S (2019), Dual SIM, 32GB, 4G, Metallic Black Obtineti mai mult cu o experienta naturala Alcatel 1S va ofera un telefon robust care va poate ajuta sa gestionati orice va vine."
+},
+
+{
+"nume":"Samsung Galaxy S10",
+"pret":2999,
+"imagine":"S10.JPG",
+"stoc":4,
+"descriere":"Telefon mobil Samsung Galaxy S10, Dual SIM, 128GB, 8GB RAM, 4G, Green Avand in spate 10 ani de pionierat si de premiere in domeniu, Galaxy iti aduce urmatoarea generatie de inovatii mobile."
+},
+
+{
+"nume":"Huawei P20 Lite",
+"pret":999,
+"imagine":"HP20.JPG",
+"stoc":5,
+"descriere":"Lasa-te absorbit de ecranul telefonului cu noua generatie Huawei FullVIEW Display. Conceput pentru o viata activa si fara compromisuri, HUAWEI P20 lite are o forma compacta dedicata aproape in intregime ecranului Full HD de 5,84 inch."
+},
+
+{
+"nume":"Apple Iphone XS",
+"pret":3379,
+"imagine":"iphoneXS10.JPG",
+"stoc":5,
+"descriere":"Super Retina in doua dimensiuni - inclusiv cel mai mare ecran vazut vreodata la un iPhone. Face ID si mai rapid. Cel mai inteligent si mai puternic cip intalnit la un smartphone. "
+},
+
+{
+"nume":"Dell Vostro SFF 3471",
+"pret":999,
+"imagine":"Del1.JPG",
+"stoc":9,
+"descriere":"Desktop-urile PC de afaceri va ofera versatilitate, securitate si o buna administrare a datelor, intr-un design compact cu economie de spatiu. "
+},
+
+{
+"nume":"ASUS ZenBook Duo",
+"pret":5999,
+"imagine":"Asus1.JPG",
+"stoc":16,
+"descriere":"Du-ti creativitatea si productivitatea la cel mai inalt nivel cu ajutorul extraordinarului ASUS ZenBook Duo!"
+},
+
+{
+"nume":"HP ENVY ",
+"pret":3999,
+"imagine":"HP1.JPG",
+"stoc":11,
+"descriere":"Eleganta si durabilitatea se imbina intr-un design subtire si usor - creat din aluminiu, perfect pentru un stil de viata mobil. "
+},
+
+{
+"nume":"Laptop Razer Blade Pro",
+"pret":25750,
+"imagine":"Alien1.JPG",
+"stoc":1,
+"descriere":"Noul Razer Blade Pro 17 Nvidia RTX Gaming Laptop Noul Razer Blade 17 se gaseste in configuratie cu ultimul procesor Intel a 9 a generatie, placi video incepand cu NVIDIA GeForce RTX 2060 GPU pana la RTX 2080 8GB, impreuna cu memorie ram upgradabila pana la 32GB, display super responsiv pana la 144 Hz sau chiar optiunea de 4K UHD"
+}
+
+],
+
+"cos" :[]
+}
+
+
+
+
+
+
+
+
+
